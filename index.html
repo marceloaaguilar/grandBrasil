@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Íntegro Proteção Veicular</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand" href="#">
+        <img src="imgs/logo.png" id="logo" class="img-fluid" alt="Logo Íntegro">
+      </a>
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span >
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FCAC13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#coberturas">Coberturas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#beneficios">Benefícios</a>
+          </li>
+        </ul>
+        <a data-bs-toggle="modal" data-bs-target="#simulacaoModal" class="btn btn-custom-yellow ms-lg-3" id="btnNavbar">Assinar Agora</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header-banner" id="inicio" style="position: relative; height: 100vh; overflow: hidden;">
+    <div class="background-image" style="background-image: url('imgs/imgHome.jpg'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center;">
+      <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+    </div>
+  
+    <div class="container d-flex align-items-center justify-content-start" style="position: relative; z-index: 1; height: 100%;">
+      <div class="row w-100">
+        <div class="col-lg-6">
+          <div class="text-content" style="color: #fff;">
+            <h1 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem;">Segurança para <strong>você</strong> e seu <strong>veículo</strong></h1>
+            <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">Com planos acessíveis e cobertura completa, tenha tranquilidade a cada viagem.</p>
+            <div class="d-flex flex-wrap">
+              <a href="#coberturas" class="btn btn-custom-yellow me-3 mb-2">Ver Planos</a>
+              <a href="" target="_blank" class="btn btn-custom-yellow mb-2" >Abertura de Evento</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="coverages-section py-5" style="background-color: #EFEEE8;" id="coberturas">
+    <div class="coverage-container">
+        <h2 class="text-center mb-4 px-2" style="font-weight: bold; color: #444444">Coberturas de Proteção Veicular</h2>
+        <p class="text-center mb-5 px-2" style="color: #444444;">
+            Nossa proteção veicular abrange uma série de incidentes para sua segurança e tranquilidade:
+        </p>
+         
+        <div class="row justify-content-center gap-lg-5">
+            <div class="col-md-3 col-lg-auto mb-4 cardCoverage">
+                <div class="coverage-card text-center p-4">
+                    <div class="mx-auto mb-3">
+                       <img src="imgs/icons/batida.png" class="img-fluid img-icon" alt="" srcset="">
+                    </div>
+                    <h4 class="card-title">Acidentes</h4>
+                    <p>Cobertura completa para danos causados por acidentes.</p>
+                </div>
+            </div>
+            
+            <!-- Card 2: Roubo -->
+            <div class="col-md-3 col-lg-auto mb-4 cardCoverage">
+                <div class="coverage-card text-center p-4">
+                    <div class="mx-auto mb-3">
+                      <img src="imgs/icons/roubo.png" class="img-fluid img-icon" alt="" srcset="">
+                    </div>
+                    <h4 class="card-title">Roubo</h4>
+                    <p>Proteção contra roubo do veículo.</p>
+                </div>
+            </div>
+            
+            <!-- Card 3: Furto -->
+            <div class="col-md-3 col-lg-auto mb-4 cardCoverage">
+                <div class="coverage-card text-center p-4">
+                    <div class="mx-auto mb-3">
+                      <img src="imgs/icons/furto.png" class="img-fluid img-icon" alt="" srcset="">
+                    </div>
+                    <h4 class="card-title">Furto</h4>
+                    <p>Segurança para situações de furto, garantindo a reposição do seu veículo.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-auto mb-4 cardCoverage">
+                <div class="coverage-card text-center p-4">
+                    <div class="icon-circle mx-auto mb-3">
+                      <img src="imgs/icons/carroIncendio.png" class="img-fluid img-icon" alt="" srcset="">
+                    </div>
+                    <h4 class="card-title">Incêndio</h4>
+                    <p>Cobertura contra danos causados por incêndios.</p>
+                </div>
+            </div>
+            
+            <!-- Card 5: Danos da Natureza -->
+            <div class="col-md-3 col-lg-auto mb-4 cardCoverage">
+                <div class="coverage-card text-center p-4">
+                    <div class="icon-circle mx-auto mb-3">
+                      <img src="imgs/icons/arvoreNoCarro.png" class="img-fluid img-icon" alt="" srcset="">
+                    </div>
+                    <h4 class="card-title">Danos da Natureza</h4>
+                    <p>Proteção contra danos naturais, como tempestades e enchentes.</p>
+                </div>
+            </div>
+          </div>
+      
+    </div>
+  </section>
+
+  <section class="fitcar-section py-5" id="sobre" style="background-color: #f9f9f9;">
+    <div class="container">
+      <h2 class="text-center mb-5" style="font-weight: bold; color: #333;">Nossos Serviços</h2>
+      <div class="row justify-content-center gap-4">
+        
+        <!-- Bloco de Serviço -->
+        <div class="col-12 col-md-8 text-center mb-5 p-4" style="box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); background-color: #fff; border-radius: 8px;">
+          <i class="fas fa-car fa-2x mb-3" style="color: #FCAC13;"></i>
+          <h4 style="font-weight: bold; color: #333;">Proteção Completa</h4>
+          <p class="mb-2">Cobertura ampla para roubo, furto, incêndio e colisão. Nosso plano oferece segurança total para que você tenha tranquilidade em qualquer situação.</p>
+          <p><strong>Inclui:</strong> Seguro contra danos materiais e apoio 24h para quaisquer imprevistos.</p>
+        </div>
+  
+        <!-- Bloco de Serviço -->
+        <div class="col-12 col-md-8 text-center mb-5 p-4" style="box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); background-color: #fff; border-radius: 8px;">
+          <i class="fas fa-tools fa-2x mb-3" style="color: #FCAC13;"></i>
+          <h4 style="font-weight: bold; color: #333;">Assistência 24h</h4>
+          <p class="mb-2">Serviço de assistência veicular disponível 24 horas por dia. Estamos sempre prontos para ajudar com guincho, rastreamento e monitoramento.</p>
+          <p><strong>Benefícios:</strong> Cobertura nacional, serviços rápidos e segurança garantida em qualquer situação.</p>
+        </div>
+  
+        <!-- Bloco de Serviço -->
+        <div class="col-12 col-md-8 text-center mb-5 p-4" style="box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); background-color: #fff; border-radius: 8px;">
+          <i class="fas fa-home fa-2x mb-3" style="color: #FCAC13;"></i>
+          <h4 style="font-weight: bold; color: #333;">Assistência Residencial</h4>
+          <p class="mb-2">Oferecemos suporte técnico e emergencial para resolver problemas residenciais, como encanamentos, elétrica e muito mais.</p>
+          <p><strong>Vantagens:</strong> Atendimento rápido e eficiente, com técnicos qualificados para cada necessidade.</p>
+        </div>
+  
+        <!-- Bloco de Serviço -->
+        <div class="col-12 col-md-8 text-center mb-5 p-4" style="box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); background-color: #fff; border-radius: 8px;">
+          <i class="fas fa-gas-pump fa-2x mb-3" style="color: #FCAC13;"></i>
+          <h4 style="font-weight: bold; color: #333;">Cobertura GNV</h4>
+          <p class="mb-2">Proteção completa para veículos com Kit GNV. Segurança adicional para o sistema de gás natural veicular.</p>
+          <p><strong>Inclui:</strong> Assistência técnica especializada em caso de falhas ou acidentes com GNV.</p>
+        </div>
+  
+        <!-- Bloco de Serviço -->
+        <div class="col-12 col-md-8 text-center mb-5 p-4" style="box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); background-color: #fff; border-radius: 8px;">
+          <i class="fas fa-cross fa-2x mb-3" style="color: #FCAC13;"></i>
+          <h4 style="font-weight: bold; color: #333;">Assistência Funeral</h4>
+          <p class="mb-2">Apoio essencial em momentos delicados, cobrindo despesas e organizando cerimônias com dignidade.</p>
+          <p><strong>Benefício:</strong> Atendimento rápido e respeitoso para que a família não precise lidar com burocracias.</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits-section py-5" style="background-color: #FCAC13;" id="beneficios">
+    <div class="container">
+        <h2 class="text-center mb-4" style="font-weight: bold; color: #fff;">Benefícios Exclusivos</h2>
+        <p class="text-center mb-5" style="color: #fff;">
+            Além da proteção veicular, oferecemos uma gama de benefícios adicionais para você:
+        </p>
+        
+        <div class="row justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-md-5 col-lg-3 mb-4">
+                <div class="benefit-card text-center p-3">
+                    <img src="imgs/telemedicina.jpg" alt="Telemedicina" class="img-card mb-3">
+                    <h4 style="font-weight: bold; color: #333;">Telemedicina</h4>
+                    <p style="color: #555;">Atendimento médico à distância, com consultas online para sua comodidade.</p>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="col-md-5 col-lg-3 mb-4">
+                <div class="benefit-card text-center p-3">
+                    <img src="imgs/compras.jpg" alt="Clube de Descontos" class="img-card mb-3">
+                    <h4 style="font-weight: bold; color: #333;">Clube de Descontos</h4>
+                    <p style="color: #555;">Acesso a descontos exclusivos em lojas, serviços e produtos.</p>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="col-md-5 col-lg-3 mb-4">
+                <div class="benefit-card text-center p-3">
+                    <img src="imgs/medicamentos.jpg" alt="Medicamentos a Preço de Custo" class="img-card mb-3">
+                    <h4 style="font-weight: bold; color: #333;">Medicamentos a Preço de Custo</h4>
+                    <p style="color: #555;">Compra de medicamentos a preço de custo, garantindo economia para você.</p>
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="col-md-5 col-lg-3 mb-4">
+                <div class="benefit-card text-center p-3">
+                    <img src="imgs/velas.jpg nb/" alt="Assistência Funeral" class="img-card mb-3">
+                    <h4 style="font-weight: bold; color: #333;">Assistência Funeral</h4>
+                    <p style="color: #555;">Suporte e assistência em momentos difíceis, oferecendo tranquilidade e apoio.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="integro-section" style="background-color: #f9f9f9;">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Texto e CTA -->
+        <div class="col-md-6">
+          <h2 style="font-weight: bold; color: #333;">Conheça a Íntegro</h2>
+          <p class="mt-4" style="color: #666; line-height: 1.6;">
+            A Íntegro oferece soluções de proteção e assistência pensadas para sua tranquilidade. Com cobertura ampla para veículos e residências, garantimos suporte técnico, seguro contra incidentes e atendimento personalizado. Confiança e segurança para o que realmente importa!
+          </p>
+          <a href="#simulacao" class="btn btn-custom-yellow mt-4">Faça sua Simulação</a>
+        </div>
+        
+        <!-- Imagem -->
+        <div class="col-md-6 text-center">
+          <img src="imgs/about.jpg" alt="Conheça a Íntegro" class="img-fluid" id="imgAbout">
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-white py-5" style="background-color: #000;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-3 text-center text-md-start mb-4 mb-md-0">
+          <img src="imgs/logoFundoEscuro.png" alt="Fit Car Logo" class="img-fluid">
+        </div>
+        <div class="col-md-3 text-center text-md-start mb-4 mb-md-0">
+          <h5>Contato</h5>
+          <p><i class="fas fa-phone"></i> (XX) XXXX-XXXX</p>
+          <p><i class="fas fa-whatsapp"></i> WhatsApp: (XX) XXXXX-XXXX</p>
+        </div>
+        <div class="col-md-3 text-center text-md-start mb-4 mb-md-0">
+          <h5>Redes Sociais</h5>
+          <a href="https://www.instagram.com/fitcar" class="text-white me-3 text-decoration-none" target="_blank" aria-label="Instagram" style="text-decoration: none;">
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>          
+          <a href="https://wa.me/XXXXXXXXXXX" class="text-white" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp fa-lg"></i>
+          </a>
+        </div>
+        <div class="col-md-3 text-center text-md-start">
+          <h5>Faça sua Simulação</h5>
+          <button class="btn btn-custom-yellow-dark mt-2" data-bs-toggle="modal" data-bs-target="#simulacaoModal">
+            Simule Agora
+          </button>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <small>&copy; 2024 Fit Car - Todos os direitos reservados</small>
+      </div>
+    </div>
+  </footer>  
+
+  <div class="modal fade" id="simulacaoModal" tabindex="-1" aria-labelledby="simulacaoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="simulacaoModalLabel">Faça sua Simulação</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="col-md-6">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="tel" class="form-control" id="telefone" required>
+              </div>
+              <div class="col-md-6">
+                <label for="bairro" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="bairro" required>
+              </div>
+              <div class="col-md-6">
+                <label for="modeloVeiculo" class="form-label">Modelo do Veículo</label>
+                <input type="text" class="form-control" id="modeloVeiculo" required>
+              </div>
+              <div class="col-md-3">
+                <label for="ano" class="form-label">Ano</label>
+                <input type="number" class="form-control" id="ano" required>
+              </div>
+              <div class="col-md-3">
+                <label for="utilizacao" class="form-label">Utilização</label>
+                <select class="form-select" id="utilizacao" required>
+                  <option value="" disabled selected>Selecione...</option>
+                  <option value="passeio">Passeio</option>
+                  <option value="trabalho">Trabalho</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-custom-yellow mt-4 px-5">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

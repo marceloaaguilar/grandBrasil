@@ -1,0 +1,272 @@
+ /* Estilos personalizados */
+ body {
+  background-color: #F7CD00; /* Amarelo como cor principal */
+  color: #000000;
+}
+
+.header-banner {
+  height: 100vh;
+  position: relative;
+  background-color: #ffffff; /* Header branco */
+  color: #000000;
+}
+
+#logo{
+  width: 14rem;
+}
+
+.header-banner .text-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.fitcar-section .card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #000; /* Fundo preto para os cards */
+  color: #F7CD00; /* Texto amarelo */
+}
+
+.benefits-section .card {
+  background-color: #000; /* Fundo preto para os cards */
+  color: #F7CD00; /* Texto amarelo */
+}
+
+footer {
+  background-color: #000000;
+  color: #F7CD00;
+  padding: 20px;
+}
+
+footer a {
+  color: #F7CD00;
+}
+
+footer a:hover {
+  color: #e6ba00;
+}
+
+nav {
+  background-color: #ffffff; /* Navbar branco */
+  border-bottom: 1px solid #dddddd;
+}
+
+nav a.nav-link, nav a.navbar-brand {
+  color: #000000; /* Texto preto */
+}
+
+nav a.nav-link:hover, nav a.navbar-brand:hover {
+  color: #333333; /* Texto preto escuro ao passar o mouse */
+}
+
+.nav-link {
+  position: relative;
+  color: #333;
+  transition: color 0.3s ease;
+  margin: 1rem;
+}
+
+.nav-link:hover {
+  color: #FCAC13; /* Ajuste a cor do texto ao passar o mouse */
+}
+
+/* Efeito do retângulo amarelo abaixo do link no hover */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px; /* Ajuste da posição do retângulo */
+  height: 3px; /* Altura do retângulo */
+  background-color: #FCAC13;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1); /* Expande o retângulo no hover */
+}
+
+
+
+.btn-custom-yellow {
+  background-color: #FCAC13; /* Amarelo */
+  color: #fff; /* Preto no texto */
+  border-radius: 30px; /* Bordas arredondadas */
+  padding: 10px 20px; /* Espaçamento */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+  font-weight: 700;
+}
+
+.btn-custom-yellow:hover {
+  background-color: #000; /* Preto no hover */
+  color: #FCAC13; /* Branco no texto */
+}
+
+.btn-custom-yellow-dark {
+  background-color: #FCAC13; /* Amarelo */
+  color: #fff; /* Preto no texto */
+  border-radius: 30px; /* Bordas arredondadas */
+  padding: 10px 20px; /* Espaçamento */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+  font-weight: 700;
+}
+
+.btn-custom-yellow-dark:hover {
+  background-color: unset;
+  border: 1px solid #FCAC13; /* Preto no hover */
+  color: #FCAC13; /* Branco no texto */
+}
+
+
+
+
+.custom-toggler {
+  border: none; /* Remove a borda */
+  background-color: transparent; /* Transparente */
+}
+
+
+ .custom-toggler:focus {
+    outline: none; 
+    box-shadow: none; 
+}
+
+.custom-toggler span svg {
+  transition: transform 0.4s ease-in-out; /* Transição para animação */
+}
+
+.custom-toggler.collapsed span svg {
+  transform: rotate(0deg); /* Estado inicial */
+}
+
+.custom-toggler:not(.collapsed) span svg {
+  transform: rotate(90deg); /* Gira ao clicar */
+}
+
+.service-card {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 300px; /* Altura mínima para uniformizar os cards */
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.service-card i {
+  color: #FCAC13;
+}
+
+.fitcar-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.img-icon {
+  fill: #FCAC13;
+  width: 10rem;
+  height: 6em;
+  object-fit: contain;
+}
+
+.coverage-container{
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.coverage-card{
+  background-color: #fff;
+  height: 100%;
+  width: 14rem;
+  border-radius: 10px;
+}
+
+.card-title{
+  font-weight: bold;
+  color: #333;
+}
+
+.icon-container {
+  flex-shrink: 0;
+  width: 50px; /* Largura do círculo */
+  height: 50px; /* Altura do círculo */
+  border-radius: 50%; /* Círculo */
+  background-color: #FCAC13; /* Cor de fundo do círculo */
+  display: flex; /* Flexbox para centralização */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  margin-right: 15px; /* Espaçamento à direita */
+}
+
+.icon-container i {
+  color: #fff; /* Cor dos ícones */
+  font-size: 1.5rem; /* Tamanho dos ícones */
+}
+
+.benefit-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 400px; /* Altura fixa para os cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Para distribuir o espaço */
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.img-card {
+  width: 100%;
+  height: 200px; /* Altura fixa para a imagem */
+  object-fit: cover; /* Mantém a proporção da imagem */
+  border-radius: 8px 8px 0 0;
+  background-color: #f0f0f0; /* Cor de fundo para imagens com baixa resolução */
+}
+
+#imgAbout{
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  height: 30rem;
+  object-fit: cover;
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+
+  #logo {
+    width: 12rem;
+  }
+
+  #navbarNav{
+    text-align: center;
+    margin: 2rem;
+  }
+  
+  #btnNavbar{
+    margin-top: 2rem;
+  }
+
+  .cardCoverage{
+    width: unset;
+  }
+
+  .integro-section{
+    padding: 3rem 0;
+  }
+
+  #imgAbout{
+    margin-top: 2rem;
+  }
+}
