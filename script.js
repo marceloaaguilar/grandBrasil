@@ -10,4 +10,17 @@ document.addEventListener("DOMContentLoaded", function() {
           prevEl: ".swiper-button-prev",
       },
   });
+
+    var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+    myModal.show();
+
 });
+
+
+document.getElementById('btnNo').onclick = function() {
+    document.querySelector('.error-message').style.display = 'block';
+    document.getElementById('contentModal').style.display = 'none';
+    document.querySelector('.modal-footer').style.display = 'none';
+    document.querySelector('.modal-header').style.display = 'none';
+}
+

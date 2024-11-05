@@ -239,7 +239,42 @@ nav a.nav-link:hover, nav a.navbar-brand:hover {
   object-fit: cover;
 }
 
+#prices{
+  padding-top: 2rem;
+  background-color: white;
+}
 
+#myTab{
+  justify-content: center;
+}
+
+.list-unstyled > li > .fas{
+  color: #e6ba00 !important;
+}
+
+.list-unstyled{
+  line-height: 2rem;
+}
+
+.nav-link {
+  transition: border-color 0.3s, background-color 0.3s; /* Transição suave */
+}
+
+.icon-coverage {
+  font-size: 5rem;
+  color: #FCAC13 !important;
+}
+
+.error-message {
+  display: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+#titleErrorMessage{
+  color: red;
+  font-weight: 700;
+}
 
 
 
@@ -268,5 +303,15 @@ nav a.nav-link:hover, nav a.navbar-brand:hover {
 
   #imgAbout{
     margin-top: 2rem;
+  }
+
+  #myTab{
+    width: 100%;
+    padding: 0.5rem 0;
+    gap: 0.2rem;
+  }
+
+  #myTab  > li  > a{
+    margin: 0;
   }
 }
