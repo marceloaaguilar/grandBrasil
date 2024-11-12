@@ -17,10 +17,4 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-document.getElementById('btnNo').onclick = function() {
-    document.querySelector('.error-message').style.display = 'block';
-    document.getElementById('contentModal').style.display = 'none';
-    document.querySelector('.modal-footer').style.display = 'none';
-    document.querySelector('.modal-header').style.display = 'none';
-}
 

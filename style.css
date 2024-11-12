@@ -265,16 +265,6 @@ nav a.nav-link:hover, nav a.navbar-brand:hover {
   color: #FCAC13 !important;
 }
 
-.error-message {
-  display: none;
-  font-weight: bold;
-  text-align: center;
-}
-
-#titleErrorMessage{
-  color: red;
-  font-weight: 700;
-}
 
 
 
