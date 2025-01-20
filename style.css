@@ -255,6 +255,10 @@ nav a.nav-link:hover, nav a.navbar-brand:hover {
   .description-content{
     font-size: 2rem;
   }
+
+  .footer-modal-custom{
+    padding: 1.5rem
+  }
 }
 
 /* MD breakpoint*/
