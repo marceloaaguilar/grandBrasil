@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Íntegro Proteção Veicular</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grand Brasil Proteção Veicular</title>
+    
+    <meta property="og:title" content="Íntegro Proteção Veicular">
+    <meta property="og:description" content="Garanta a proteção completa do seu veículo com a Íntegro Proteção Veicular.">
+    <meta property="og:image" content="imgs/logo.png">
+    <meta property="og:url" content="https://integrobeneficios.org.br/">
+    <meta property="og:type" content="website">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  </head>
+  
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid px-5">
+
       <a class="navbar-brand" href="#">
         <img src="imgs/logo.png" id="logo" class="img-fluid" alt="Logo Íntegro">
       </a>
+
       <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span >
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FCAC13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
@@ -27,31 +45,25 @@
           </svg>
         </span>
       </button>
+
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
+
           <li class="nav-item">
-            <a class="nav-link" href="#inicio">Início</a>
+            <a class="nav-link" href="#aboutUs">Sobre</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" href="#coberturas">Coberturas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#sobre">Sobre</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#beneficios">Benefícios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://clubecerto.com.br/hotsite/?utm_cc=acessodireto&ent=INTEGRO">Descontos</a>
+            <a class="nav-link" href="#talkWithUs">Fale Conosco</a>
           </li>
         </ul>
-        <a data-bs-toggle="modal" data-bs-target="#simulacaoModal" class="btn btn-custom-yellow ms-lg-3" id="btnNavbar">Cotação</a>
       </div>
+
     </div>
   </nav>
 
-  <header class="header-banner" id="inicio" style="position: relative; height: 100vh; overflow: hidden;">
-    <div class="background-image" style="background-image: url('imgs/imgHome.jpg'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center;">
+  <!-- <header class="header-banner" id="inicio" style="position: relative; height: 70vh; overflow: hidden;">
+    <div class="background-image" style="background-image: url('imgs/home.jpg'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: 60% 30%;">
       <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
     </div>
   
@@ -59,447 +71,88 @@
       <div class="row w-100">
         <div class="col-lg-6">
           <div class="text-content" style="color: #fff;">
-            <h1 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem;">Segurança para <strong>você</strong> e seu <strong>veículo</strong></h1>
-            <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">Com planos acessíveis e cobertura completa, tenha tranquilidade a cada viagem.</p>
-            <div class="d-flex flex-wrap">
-              <a href="#prices" class="btn btn-custom-yellow me-3 mb-2">Ver Planos</a>
-              <a href="" target="_blank" class="btn btn-custom-yellow mb-2" >Abertura de Evento</a>
-            </div>
+            <h1 style="font-size: 4rem; font-weight: bold; margin-bottom: 1rem;">Sua Segurança <br> em primeiro lugar!</h1>
+            
           </div>
         </div>
       </div>
     </div>
-  </header>
+  </header> -->
 
-  <section id="prices" class="p-4 bg-light text-center">
-    <h2 class="mb-4">Escolha o seu plano ideal</h2>
-    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <a class="nav-link active" id="moto-bronze" data-bs-toggle="tab" data-bs-target="#moto-bronze-pane" type="button" role="tab" aria-controls="moto-bronze-pane" aria-selected="true">Moto Bronze</a>
-      </li>
-      <li class="nav-item" role="presentation">
-        <a class="nav-link" id="moto-ouro" data-bs-toggle="tab" data-bs-target="#moto-ouro-pane" type="button" role="tab" aria-controls="moto-ouro-tab-pane" aria-selected="false">Moto Ouro</a>
-      </li>
-      <li class="nav-item" role="presentation">
-        <a class="nav-link" id="plano-bronze" data-bs-toggle="tab" data-bs-target="#plano-bronze-pane" type="button" role="tab" aria-controls="plano-bronze-tab-pane" aria-selected="false">Plano Bronze</a>
-      </li>
-      <li class="nav-item" role="presentation">
-        <a class="nav-link" id="plano-prata" data-bs-toggle="tab" data-bs-target="#plano-prata-pane" type="button" role="tab" aria-controls="plano-prata-tab-pane" aria-selected="false">Plano Prata</a>
-      </li>
-      <li class="nav-item" role="presentation">
-        <a class="nav-link" id="plano-ouro" data-bs-toggle="tab" data-bs-target="#plano-ouro-pane" type="button" role="tab" aria-controls="plano-ouro-tab-pane" aria-selected="false">Plano Ouro</a>
-      </li>
-    </ul>
-  
-    <div class="tab-content bg-white p-4" id="myTabContent">
-      <div class="tab-pane fade show active" id="moto-bronze-pane" role="tabpanel" aria-labelledby="moto-bronze">
-        <div class="row justify-content-center gap-5 mx-4 align-items-center">
-          <div class="text-center">
-            <div style="display: inline-block; position: relative; padding-bottom: 8px;">
-              <h2 class="fw-bold text-dark m-0">Plano Moto Bronze</h2>
-              <div style="height: 4px; background-color: #CD7F32; margin: 4px auto 0; width: 110%; transform: translateX(-5%);"></div>
-            </div>
-          </div>
-                                        
-          <div class="col-auto text-start mx-5">
-            <h5>Cobertura</h5>
-            <ul class="list-unstyled">
-              <li><i class="fas fa-check text-muted me-2"></i>Roubo e furto</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Monitoramento</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Telemedicina</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Medicamentos a preço de custo</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Clube de descontos</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Assistência funeral</li>
-            </ul>
-          </div>
-    
-          <div class="col-auto text-start mx-5">
-            <h5>Assistência 24h</h5>
-            <p><i class="fas fa-check text-muted me-2"></i>Reboque 200 km (100 km ida - 100 km volta)</p>
-            <h5 class="mt-4">5 utilizações por motivos diferentes:</h5>
-            <ul class="list-unstyled">
-              <li><i class="fas fa-check text-muted me-2"></i>Pane elétrica/mecânica</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Pane seca</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Troca de pneus</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Perda ou quebra de chaves</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Pós-colisão, roubo/furto, incêndio</li>
-            </ul>
-          </div>
-        </div>
+  <div class="swiper mySwiper header">
+    <div class="swiper-wrapper">
 
-          <a data-bs-toggle="modal" data-bs-target="#simulacaoModal" class="btn btn-custom-yellow ms-lg-3 px-5" id="btnNavbar">Cotação</a>
-
-      </div>
-
-      <div class="tab-pane fade" id="moto-ouro-pane" role="tabpanel" aria-labelledby="moto-ouro">
-        <div class="row justify-content-center gap-5 mx-4 align-items-center">
-          <div class="text-center">
-            <div style="display: inline-block; position: relative; padding-bottom: 8px;">
-              <h2 class="fw-bold text-dark m-0">Plano Moto Ouro</h2>
-              <div style="height: 4px; background-color: #FFD700; margin: 4px auto 0; width: 110%; transform: translateX(-5%);"></div> <!-- Cor dourada -->
-            </div>
-          </div>          
-      
-          <div class="col-auto text-start mx-5">
-            <h5>Cobertura</h5>
-            <ul class="list-unstyled">
-              <li><i class="fas fa-check text-muted me-2"></i>Roubo</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Furto</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Colisão</li>
-              <li><i class="fas fa-check text-muted me-2"></i>PT</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Monitoramento</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Dano a terceiros (30 mil)</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Telemedicina</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Medicamentos a preço de custo</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Clube de descontos</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Assistência funeral</li>
-            </ul>
-          </div>
-      
-          <div class="col-auto text-start mx-5">
-            <h5>Assistência 24h</h5>
-            <p><i class="fas fa-check text-muted me-2"></i>Reboque 400 km (200 km ida - 200 km volta)</p>
-            <h5 class="mt-4">5 utilizações por motivos diferentes:</h5>
-            <ul class="list-unstyled">
-              <li><i class="fas fa-check text-muted me-2"></i>Pane elétrica/mecânica</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Pane seca</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Troca de pneus</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Perda ou quebra de chaves</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Pós-colisão, roubo/furto, incêndio</li>
-            </ul>
-          </div>
-        </div>
-      
-        <a data-bs-toggle="modal" data-bs-target="#simulacaoModal" class="btn btn-custom-yellow ms-lg-3 px-5" id="btnNavbar">Cotação</a>
-      </div>
-
-      <div class="tab-pane fade" id="plano-bronze-pane" role="tabpanel" aria-labelledby="plano-bronze">
-        <div class="row justify-content-center gap-5 mx-4 align-items-center">
-          <div class="text-center">
-            <div style="display: inline-block; position: relative; padding-bottom: 8px;">
-              <h2 class="fw-bold text-dark m-0">Plano Bronze</h2>
-              <div style="height: 4px; background-color: #CD7F32; margin: 4px auto 0; width: 110%; transform: translateX(-5%);"></div> <!-- Cor dourada -->
-            </div>
-          </div>
-      
-          <div class="col-auto text-start mx-5">
-            <h5>Cobertura</h5>
-            <ul class="list-unstyled">
-              <li><i class="fas fa-check text-muted me-2"></i>Roubo</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Furto</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Monitoramento</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Carro reserva (7 dias)</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Telemedicina</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Medicamentos a preço de custo</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Clube de descontos</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Assistência funeral</li>
-            </ul>
-          </div>
-      
-          <div class="col-auto text-start mx-5">
-            <h5>Assistência 24h</h5>
-            <p><i class="fas fa-check text-muted me-2"></i>Reboque 400 km (200 km ida - 200 km volta)</p>
-            <h5 class="mt-4">5 utilizações por motivos diferentes:</h5>
-            <ul class="list-unstyled">
-              <li><i class="fas fa-check text-muted me-2"></i>Pane elétrica/mecânica</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Pane seca</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Troca de pneus</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Perda ou quebra de chaves</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Pós-colisão, roubo/furto, incêndio</li>
-            </ul>
-          </div>
-        </div>
-      
-        <a data-bs-toggle="modal" data-bs-target="#simulacaoModal" class="btn btn-custom-yellow ms-lg-3 px-5" id="btnNavbar">Cotação</a>
-      </div>
-      
-      <div class="tab-pane fade" id="plano-prata-pane" role="tabpanel" aria-labelledby="plano-prata">
-        <div class="row justify-content-center gap-5 mx-4 align-items-center">
-          <div class="text-center">
-            <div style="display: inline-block; position: relative; padding-bottom: 8px;">
-              <h2 class="fw-bold text-dark m-0">Plano Prata</h2>
-              <div style="height: 4px; background-color: #C0C0C0; margin: 4px auto 0; width: 110%; transform: translateX(-5%);"></div> <!-- Cor prata -->
-            </div>
-          </div>
-      
-          <div class="col-auto text-start mx-5">
-            <h5>Cobertura</h5>
-            <ul class="list-unstyled">
-              <li><i class="fas fa-check text-muted me-2"></i>Roubo</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Furto</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Colisão</li>
-              <li><i class="fas fa-check text-muted me-2"></i>PT</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Monitoramento</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Fenômenos da natureza</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Dano a terceiros (até 50 mil)</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Carro reserva (15 dias)</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Vidros (50%)</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Incêndio</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Telemedicina</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Medicamentos a preço de custo</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Clube de descontos</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Assistência funeral</li>
-            </ul>
-          </div>
-      
-          <div class="col-auto text-start mx-5">
-            <h5>Assistência 24h</h5>
-            <p><i class="fas fa-check text-muted me-2"></i>Reboque 600 km (300 km ida - 300 km volta)</p>
-            <h5 class="mt-4">5 utilizações por motivos diferentes:</h5>
-            <ul class="list-unstyled">
-              <li><i class="fas fa-check text-muted me-2"></i>Pane elétrica/mecânica</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Pane seca</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Troca de pneus</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Perda ou quebra de chaves</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Pós-colisão, roubo/furto, incêndio</li>
-            </ul>
-          </div>
-        </div>
-      
-        <a data-bs-toggle="modal" data-bs-target="#simulacaoModal" class="btn btn-custom-yellow ms-lg-3 px-5" id="btnNavbar">Cotação</a>
-      </div>      
-      
-      <div class="tab-pane fade" id="plano-ouro-pane" role="tabpanel" aria-labelledby="plano-ouro">
-        <div class="row justify-content-center gap-5 mx-4 align-items-center">
-          <div class="text-center">
-            <div style="display: inline-block; position: relative; padding-bottom: 8px;">
-              <h2 class="fw-bold text-dark m-0">Plano Ouro</h2>
-              <div style="height: 4px; background-color: #FFD700; margin: 4px auto 0; width: 110%; transform: translateX(-5%);"></div> <!-- Cor dourada -->
-            </div>
-          </div>
-      
-          <div class="col-auto text-start mx-5">
-            <h5>Cobertura</h5>
-            <ul class="list-unstyled">
-              <li><i class="fas fa-check text-muted me-2"></i>Roubo</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Furto</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Colisão</li>
-              <li><i class="fas fa-check text-muted me-2"></i>PT</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Monitoramento</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Fenômenos da natureza</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Dano a terceiros (até 100 mil)</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Carro reserva (30 dias)</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Vidros (60%)</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Incêndio</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Telemedicina</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Medicamentos a preço de custo</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Clube de descontos</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Assistência funeral</li>
-            </ul>
-          </div>
-      
-          <div class="col-auto text-start mx-5">
-            <h5>Assistência 24h</h5>
-            <p><i class="fas fa-check text-muted me-2"></i>Reboque 1000 km (500 km ida - 500 km volta)</p>
-            <h5 class="mt-4">5 utilizações por motivos diferentes:</h5>
-            <ul class="list-unstyled">
-              <li><i class="fas fa-check text-muted me-2"></i>Pane elétrica/mecânica</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Pane seca</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Troca de pneus</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Perda ou quebra de chaves</li>
-              <li><i class="fas fa-check text-muted me-2"></i>Pós-colisão, roubo/furto, incêndio</li>
-            </ul>
-          </div>
-        </div>
-      
-        <a data-bs-toggle="modal" data-bs-target="#simulacaoModal" class="btn btn-custom-yellow ms-lg-3 px-5" id="btnNavbar">Cotação</a>
-      </div>
-      
-    </div>
-    
-  </section>
-  
-  <section class="coverages-section py-5" style="background-color: #EFEEE8;" id="coberturas">
-    <div class="coverage-container">
-        <h2 class="text-center mb-4 px-2" style="font-weight: bold; color: #444444">Coberturas de Proteção Veicular</h2>
-        <p class="text-center mb-5 px-2" style="color: #444444;">
-            Nossa proteção veicular abrange uma série de incidentes para sua segurança e tranquilidade:
-        </p>
-         
-      <div class="row justify-content-center gap-lg-5">
-          <div class="col-md-3 col-lg-auto mb-4 cardCoverage">
-              <div class="coverage-card text-center p-4">
-                  <div class="mx-auto mb-3">
-                      <img src="imgs/icons/batida.png" class="img-fluid img-icon" alt="Acidentes">
-                  </div>
-                  <h4 class="card-title">Acidentes</h4>
-                  <p>Cobertura completa para danos causados por acidentes.</p>
-              </div>
-          </div>
-          
-          <!-- Card 2: Roubo -->
-          <div class="col-md-3 col-lg-auto mb-4 cardCoverage">
-              <div class="coverage-card text-center p-4">
-                  <div class="mx-auto mb-3">
-                      <img src="imgs/icons/roubo.png" class="img-fluid img-icon" alt="Roubo">
-                  </div>
-                  <h4 class="card-title">Roubo</h4>
-                  <p>Proteção contra roubo do veículo, mesmo sem habilitação.</p>
-              </div>
-          </div>
-          
-          <!-- Card 3: Furto -->
-          <div class="col-md-3 col-lg-auto mb-4 cardCoverage">
-              <div class="coverage-card text-center p-4">
-                  <div class="mx-auto mb-3">
-                      <img src="imgs/icons/furto.png" class="img-fluid img-icon" alt="Furto">
-                  </div>
-                  <h4 class="card-title">Furto</h4>
-                  <p>Segurança para situações de furto, garantindo a reposição do seu veículo.</p>
-              </div>
-          </div>
-
-           <!-- Card 4: Incêndio -->
-          <div class="col-md-3 col-lg-auto mb-4 cardCoverage">
-            <div class="coverage-card text-center p-4">
-              <div class="icon-circle mx-auto mb-3">
-                  <img src="imgs/icons/carroIncendio.png" class="img-fluid img-icon" alt="Incêndio">
-              </div>
-              <h4 class="card-title">Incêndio</h4>
-              <p>Cobertura contra danos causados por incêndios.</p>
-            </div>
-          </div>
-        </div>
-
-      <div class="row justify-content-center gap-lg-5">
-        <!-- Card 5: Danos da Natureza -->
-        <div class="col-md-3 col-lg-auto mb-4 cardCoverage">
-            <div class="coverage-card text-center p-4">
-                <div class="icon-circle mx-auto mb-3">
-                    <img src="imgs/icons/arvoreNoCarro.png" class="img-fluid img-icon" alt="Danos da Natureza">
-                </div>
-                <h4 class="card-title">Danos da Natureza</h4>
-                <p>Proteção contra danos naturais, como tempestades e enchentes.</p>
-            </div>
-        </div>
-    
-        <!-- Card 6: Cobertura Carro de Leilão -->
-        <div class="col-md-3 col-lg-auto mb-4 cardCoverage">
-            <div class="coverage-card text-center p-4">
-                <div class="icon-circle mx-auto mb-3">
-                    <i class="fas fa-gavel img-fluid  icon-coverage"></i>
-                </div>
-                <h4 class="card-title">Cobertura Carro de Leilão</h4>
-                <p>Proteção especializada para veículos de leilão. Cuidamos do seu carro arrematado com total segurança.</p>
-            </div>
-        </div>
-    
-        <!-- Card 7: Cobertura a Terceiros -->
-        <div class="col-md-3 col-lg-auto mb-4 cardCoverage">
-            <div class="coverage-card text-center p-4">
-                <div class="icon-circle mx-auto mb-3">
-                    <i class="fas fa-users img-fluid icon-coverage"></i>
-                </div>
-                <h4 class="card-title">Cobertura a Terceiros</h4>
-                <p>Proteção para danos causados a terceiros, com cobertura de até R$ 100.000.</p>
-            </div>
-        </div>
-    
-        <!-- Card 8: Cota de Participação -->
-        <div class="col-md-3 col-lg-auto mb-4 cardCoverage">
-            <div class="coverage-card text-center p-4">
-                <div class="icon-circle mx-auto mb-3">
-                    <i class="fas fa-percent img-fluid icon-coverage"></i>
-                </div>
-                <h4 class="card-title">Cota de Participação</h4>
-                <p>Em caso de acidente, você paga apenas 5% do valor para consertar o veículo.</p>
-            </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="fitcar-section py-5" id="sobre" style="background-color: #f9f9f9;">
-    <div class="overflow-x-hidden">
-      <h2 class="text-center mb-5" style="font-weight: bold; color: #333;">Nossos Serviços</h2>
-      <div class="row justify-content-center gap-4 mx-5"> 
-        <div class="col-12 col-md-4 text-center mb-5 p-4 w-sm-100 w-md-25 " style="box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); background-color: #fff; border-radius: 8px;">
-            <i class="fas fa-car fa-2x mb-3" style="color: #FCAC13;"></i>
-            <h4 style="font-weight: bold; color: #333;">Proteção Completa</h4>
-            <p class="mb-2">Cobertura ampla para roubo, furto, incêndio e colisão. Nosso plano oferece segurança total para que você tenha tranquilidade em qualquer situação.</p>
-            <p><strong>Inclui:</strong> Seguro contra danos materiais e apoio 24h para quaisquer imprevistos.</p>
-        </div>
-  
-        <div class="col-12 col-md-4 text-center mb-5 p-4 w-sm-100 w-md-25 " style="box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); background-color: #fff; border-radius: 8px;">
-            <i class="fas fa-tools fa-2x mb-3" style="color: #FCAC13;"></i>
-            <h4 style="font-weight: bold; color: #333;">Assistência 24h</h4>
-            <p class="mb-2">Serviço de assistência veicular disponível 24 horas por dia. Estamos sempre prontos para ajudar com guincho, rastreamento e monitoramento.</p>
-            <p><strong>Benefícios:</strong> Cobertura nacional, serviços rápidos e segurança garantida em qualquer situação.</p>
-        </div>
-  
-        <div class="col-12 col-md-4 text-center mb-5 p-4 w-sm-100 w-md-25 " style="box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); background-color: #fff; border-radius: 8px;">
-            <i class="fas fa-cross fa-2x mb-3" style="color: #FCAC13;"></i>
-            <h4 style="font-weight: bold; color: #333;">Assistência Funeral</h4>
-            <p class="mb-2">Apoio essencial em momentos delicados, cobrindo despesas e organizando cerimônias com dignidade.</p>
-            <p><strong>Benefício:</strong> Atendimento rápido e respeitoso para que a família não precise lidar com burocracias.</p>
-        </div>
-  
-      </div>
-    </div>
-  </section>
-
-  <section class="benefits-section py-5" style="background-color: #FCAC13;" id="beneficios">
-    <div class="container">
-        <h2 class="text-center mb-4" style="font-weight: bold; color: #fff;">Benefícios Exclusivos</h2>
-        <p class="text-center mb-5" style="color: #fff;">
-            Além da proteção veicular, oferecemos uma gama de benefícios adicionais para você:
-        </p>
+      <div class="swiper-slide">
         
-        <div class="row justify-content-center">
-            <!-- Card 1 -->
-            <div class="col-md-5 col-lg-3 mb-4">
-                <div class="benefit-card text-center p-3">
-                    <img src="imgs/telemedicina.jpg" alt="Telemedicina" class="img-card mb-3">
-                    <h4 style="font-weight: bold; color: #333;">Telemedicina</h4>
-                    <p style="color: #555;">Atendimento médico à distância, com consultas online para sua comodidade.</p>
-                </div>
-            </div>
-            
-            <!-- Card 2 -->
-            <div class="col-md-5 col-lg-3 mb-4">
-                <div class="benefit-card text-center p-3">
-                    <img src="imgs/compras.jpg" alt="Clube de Descontos" class="img-card mb-3">
-                    <h4 style="font-weight: bold; color: #333;">Clube de Descontos</h4>
-                    <p style="color: #555;">Acesso a descontos exclusivos em lojas, serviços e produtos.</p>
-                </div>
-            </div>
-            
-            <!-- Card 3 -->
-            <div class="col-md-5 col-lg-3 mb-4">
-                <div class="benefit-card text-center p-3">
-                    <img src="imgs/medicamentos.jpg" alt="Medicamentos a Preço de Custo" class="img-card mb-3">
-                    <h4 style="font-weight: bold; color: #333;">Medicamentos a Preço de Custo</h4>
-                    <p style="color: #555;">Compra de medicamentos a preço de custo, garantindo economia para você.</p>
-                </div>
-            </div>
-            
-            <!-- Card 4 -->
-            <div class="col-md-5 col-lg-3 mb-4">
-                <div class="benefit-card text-center p-3">
-                    <img src="imgs/velas.jpg" alt="Assistência Funeral" class="img-card mb-3">
-                    <h4 style="font-weight: bold; color: #333;">Assistência Funeral</h4>
-                    <p style="color: #555;">Suporte e assistência em momentos difíceis, oferecendo tranquilidade e apoio.</p>
-                </div>
-            </div>
+        <div class="background-image img-fluid" style="background-image: url('imgs/home.jpg'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: 60% 30%;">
+          <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
         </div>
-    </div>
-  </section>
-
-  <section class="integro-section" style="background-color: #f9f9f9;">
-    <div class="container">
-      <div class="row align-items-center">
+      
+        <div class="container d-flex align-items-center justify-content-start" style="position: relative; z-index: 1; height: 100%;">
+          <div class="row w-100">
+            <div class="col-lg-6">
+              <div class="text-content">
+                <h1 class="light-title-content">Sua Segurança</h1>
+                <h1 class="title-content">em primeiro lugar!</h1>
+                
+              </div>
+            </div>
+          </div>
+        </div>
         
-        <!-- Texto e CTA -->
-        <div class="col-md-6">
-          <h2 style="font-weight: bold; color: #333;">Conheça a Íntegro</h2>
-          <p class="mt-4" style="color: #666; line-height: 1.6;">
-            A Íntegro oferece soluções de proteção e assistência pensadas para sua tranquilidade. Com cobertura ampla para veículos, garantimos suporte técnico, proteção veícular contra incidentes e atendimento personalizado. Confiança e segurança para o que realmente importa!
+      </div>
+
+      <div class="swiper-slide">
+        
+        <div class="background-image img-fluid" style="background-image: url('imgs/home2.jpg'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: 60% 30%;">
+          <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+        </div>
+      
+        <div class="container d-flex align-items-center justify-content-start" style="position: relative; z-index: 1; height: 100%;">
+          <div class="row w-100">
+            <div class="col-lg-6">
+              <div class="text-content">
+                <h1 class="title-content">Aconteceu algum imprevisto?</h1>
+                <p class="description-content">A Grand Brasil vai te ajudar!</p>
+                <a class="btn btn-custom">
+                  <div class=" d-flex align-items-center">
+                    <i class="bi bi-telephone me-2" style="font-size: 1.5rem;"></i>
+                    Ligue para nosssa assistência
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      
+    </div>
+
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <section class="about-section" id="aboutUs">
+    <div class="container">
+      <div class="row align-items-center py-5">
+        
+        <div class="col-md-6 mt-5">
+          <div class="title-section">
+            <p class="title-1-section">Sobre</p>
+            <p class="title-2-section">Nós</p>
+          </div>
+          <p class="mt-4" style="line-height: 1.6; font-size: 1.5rem;">
+            A Grand Brasil é uma associação sem fins lucrativos dedicada à formação de grupos de ajuda mútua, com base na autogestão e no rateio entre associados. Nosso objetivo é oferecer suporte e benefícios de forma colaborativa, promovendo tranquilidade e união.
+            <br> <br>
+            Regida pelas leis civis brasileiras, operamos de forma independente e não somos um seguro empresarial, nem regulamentados pela SUSEP. Nosso funcionamento é baseado em um Regulamento aprovado em Assembleia Geral, garantindo transparência e alinhamento com nossos associados.
           </p>
-          <a data-bs-toggle="modal" data-bs-target="#simulacaoModal" href="#simulacao" class="btn btn-custom-yellow mt-4">Faça sua Simulação</a>
+          <a class="btn btn-custom mt-4">Leia nosso regulamento</a>
         </div>
         
-        <!-- Imagem -->
-        <div class="col-md-6 text-center">
+        <div class="col-md-6 text-center" style="overflow: hidden;">
           <img src="imgs/about.jpg" alt="Conheça a Íntegro" class="img-fluid" id="imgAbout">
         </div>
         
@@ -507,92 +160,128 @@
     </div>
   </section>
 
-  <footer class="text-white py-5" style="background-color: #000;">
+  <section id="talkWithUs" class="py-5 bg-light">
+
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-3 text-center text-md-start mb-4 mb-md-0">
-          <img src="imgs/logoFundoEscuro.png" alt="Integro Logo" class="img-fluid">
-        </div>
-        <div class="col-md-3 text-center text-md-start mb-4 mb-md-0">
-          <h5>Contato</h5>
-          <p><i class="fas fa-phone"></i> (21) 4004-4897</p>
-        </div>
-        <div class="col-md-3 text-center text-md-start mb-4 mb-md-0">
-          <h5>Redes Sociais</h5>
-          <a href="https://www.instagram.com/integrobeneficios" class="text-white me-3 text-decoration-none" target="_blank" aria-label="Instagram" style="text-decoration: none;">
-            <i class="fab fa-instagram fa-lg"></i>
-          </a>          
-          <a href="https://wa.me/552140044897" class="text-white" target="_blank" aria-label="WhatsApp">
-            <i class="fab fa-whatsapp fa-lg"></i>
-          </a>
-        </div>
-        <div class="col-md-3 text-center text-md-start">
-          <h5>Faça sua Simulação</h5>
-          <button class="btn btn-custom-yellow-dark mt-2" data-bs-toggle="modal" data-bs-target="#simulacaoModal">
-            Simule Agora
-          </button>
-        </div>
+      <div class="title-section">
+        <p class="title-3-section">Fale</p>
+        <p class="title-4-section">Conosco</p>
       </div>
-      <div class="text-center mt-4">
-        <small>&copy; 2024 Íntegro Proteção Veícular - Todos os direitos reservados</small>
+      <p class="text-center text-muted mb-5" style="font-size: 1.5rem;">
+        Entre em contato conosco para dúvidas, sugestões ou mais informações. Estamos prontos para ajudar!
+      </p>
+      <div class="row align-items-center">
+
+        <div class="col-md-6 mb-4">
+
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title" style="color: #333">Nossos Contatos</h3>
+              <p class="card-text text-muted">
+                <i class="bi bi-telephone-fill me-2" style="color: #333"></i>
+                <strong>Telefone:</strong> (11) 1234-5678
+              </p>
+              <p class="card-text text-muted">
+                <i class="bi bi-envelope-fill me-2" style="color: #333"></i>
+                <strong>Email:</strong> contato@grandbrasil.com.br
+              </p>
+              <p class="card-text text-muted">
+                <i class="bi bi-geo-alt-fill me-2" style="color: #333"></i>
+                <strong>Endereço:</strong> Rua Exemplo, 123 - São Paulo, SP
+              </p>
+              <p class="card-text text-muted">
+                <i class="bi bi-clock-fill me-2" style="color: #333"></i>
+                Segunda a sexta-feira, das 8h às 18h.
+              </p>
+            </div>
+          </div>
+
+          <div class="card border-0 shadow-sm mt-4">
+            <div class="card-body text-center">
+              <h3 class="card-title" style="color: #333">Fale no WhatsApp</h3>
+              <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-custom-2 d-flex align-items-center justify-content-center">
+                <i class="bi bi-whatsapp me-2" style="font-size: 1.5rem;"></i>
+                <span>(11) 99999-9999</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-6">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title" style="color: #333">Envie uma Mensagem</h3>
+              <form action="/enviar-mensagem" method="POST">
+                <div class="mb-3">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="mensagem" class="form-label">Mensagem</label>
+                  <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom-2 mt-4 w-100">Enviar Mensagem</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </footer>  
+  </section>
+ 
+  <footer class="text-white py-3" style="background-color: #2E2D39;">
+    <div class="container d-flex justify-content-between align-items-center">
+      <span class="fs-5">Nos siga nas redes sociais!</span>
+      <div>
+        <a href="#" target="_blank" class="text-white me-3">
+          <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="#" target="_blank" class="text-white">
+          <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
 
-  <div class="modal fade" id="simulacaoModal" tabindex="-1" aria-labelledby="simulacaoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
+  <div class="modal fade" id="modalAccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="simulacaoModalLabel">Faça sua Simulação</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
+       
         <div class="modal-body">
-          <form>
-            <div class="row g-3">
-              <div class="col-md-6">
-                <label for="nome" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="nome" required>
-              </div>
-              <div class="col-md-6">
-                <label for="email" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="email" required>
-              </div>
-              <div class="col-md-6">
-                <label for="telefone" class="form-label">Telefone</label>
-                <input type="tel" class="form-control" id="telefone" required>
-              </div>
-              <div class="col-md-6">
-                <label for="bairro" class="form-label">Bairro</label>
-                <input type="text" class="form-control" id="bairro" required>
-              </div>
-              <div class="col-md-6">
-                <label for="modeloVeiculo" class="form-label">Modelo do Veículo</label>
-                <input type="text" class="form-control" id="modeloVeiculo" required>
-              </div>
-              <div class="col-md-3">
-                <label for="ano" class="form-label">Ano</label>
-                <input type="number" class="form-control" id="ano" required>
-              </div>
-              <div class="col-md-3">
-                <label for="utilizacao" class="form-label">Utilização</label>
-                <select class="form-select" id="utilizacao" required>
-                  <option value="" disabled selected>Selecione...</option>
-                  <option value="passeio">Passeio</option>
-                  <option value="trabalho">Trabalho</option>
-                </select>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-custom-yellow mt-4 px-5">Enviar</button>
-          </form>
+          <div id="contentModal">
+            <h5 class="modal-title" id="exampleModalLabel">PARA ACESSAR ESTE SITE, É PRECISO ESTAR <br> CIENTE QUE:</h5>
+            <p class="description-modal">A Grand Brasil Proteção Veicular é uma Associação, entidade sem fins lucrativos, totalmente voltada para a formação de grupos restritos de ajuda mútua, caracterizados pela autogestão e pelo rateio entre seus Associados.
+              Ou seja, não somos, de forma alguma, um seguro, um seguro empresarial. Por isso, não existe apólice, nem contrato de seguro. Contudo, possuímos Regulamentos que são aprovados em Assembleia Geral pelos nossos associados.
+            </p>
+          </div>
+
+          <!-- Espaço para a mensagem de erro -->
+          <div class="error-message">
+            <h3 class="modal-title">Poxa, que pena!</h3>
+            <p class="error-modal-description">
+              Você não pode entrar no nosso site. 🙁<br>
+              Para acessar, é necessário estar ciente que a Fitcar é uma Proteção Veicular e o que isso significa.
+            </p>
+          </div>
+        </div>
+        <div class="footer-modal-custom">
+          <p class="fs-5 modal-title">VOCÊ ESTÁ CIENTE DESTA INFORMAÇÃO?</p>
+          <div class="footer-modal">
+            <button type="button" class="btn btn-custom px-4 py-3" data-bs-dismiss="modal" style="border-radius: 5px !important;">SIM</button>
+            <button type="button" class="btn btn-custom me-2 px-4 py-3" id="btnNo" style="border-radius: 5px !important;">NÃO</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
