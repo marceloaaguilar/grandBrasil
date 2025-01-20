@@ -259,6 +259,15 @@ nav a.nav-link:hover, nav a.navbar-brand:hover {
   .footer-modal-custom{
     padding: 1.5rem
   }
+
+  .swiper-button-prev, .swiper-button-next{
+    display: none;
+  }
+
+  .text-content{
+    text-align: left;
+    padding-left: 1rem;
+  }
 }
 
 /* MD breakpoint*/
