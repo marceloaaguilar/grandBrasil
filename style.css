@@ -134,20 +134,20 @@ nav a.nav-link:hover, nav a.navbar-brand:hover {
 
 .title-content{
   font-size: 4rem; 
-  font-weight: bold; 
-  margin-bottom: 1rem;
+  font-weight: bold;
+  margin: 0;
 }
 
 .light-title-content{
   font-size: 4rem; 
   font-weight: 200; 
-  margin-bottom: 1rem;
+  margin: 0;
 }
 
 .description-content{
   font-size: 2rem; 
   font-weight: light; 
-  margin-bottom: 1rem;
+  margin: 0;
 }
 
 .text-content{
@@ -218,6 +218,49 @@ nav a.nav-link:hover, nav a.navbar-brand:hover {
 .error-modal-description{
   font-weight: 300;
   padding: 1rem;
+}
+
+#whatsappImg{
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  width: 4rem;
+  z-index: 10000;
+}
+
+.small-title{
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+#beneficios {
+  background-color: #f8f9fa;
+}
+
+.beneficio-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.beneficio-item:hover {
+  transform: translateY(-10px);
+}
+
+.beneficio-item i {
+  color: #36334F;
+}
+
+.beneficio-item h4 {
+  color: #36334F;
+  ;
+  margin-bottom: 15px;
+}
+
+.beneficio-item p {
+  color: #6c757d;
 }
 
 @media screen and (max-width: 767px) {
