@@ -22,352 +22,479 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   </head>
   
-<body>
+  <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid px-5">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid px-5">
 
-      <a class="navbar-brand" href="#">
-        <img src="imgs/logo.png" id="logo" class="img-fluid" alt="Logo Íntegro">
+        <a class="navbar-brand" href="#">
+          <img src="imgs/logo.png" id="logo" class="img-fluid" alt="Logo Íntegro">
+        </a>
+
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span >
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E98D4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutUs">Sobre</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#beneficios">Benefícios</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#regulamento">Regulamento</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#talkWithUs">Fale Conosco</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <div id="whatsappBtn">
+      <a href="http://wa.me/5521973548842" target="_blank">
+        <img src="imgs/whatsapp_logo_icon_147205.png"  class="btnWhatsapp" id="whatsappImg" alt="">
       </a>
-
-      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span >
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E98D4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-
-          <li class="nav-item">
-            <a class="nav-link" href="#aboutUs">Sobre</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#talkWithUs">Fale Conosco</a>
-          </li>
-        </ul>
-      </div>
-
     </div>
-  </nav>
 
-  <div id="whatsappBtn">
-    <a href="http://wa.me/5521973548842" target="_blank">
-      <img src="imgs/whatsapp_logo_icon_147205.png"  class="btnWhatsapp" id="whatsappImg" alt="">
-    </a>
-  </div>
+    <div class="swiper mySwiper header">
+      <div class="swiper-wrapper">
 
-  <!-- <header class="header-banner" id="inicio" style="position: relative; height: 70vh; overflow: hidden;">
-    <div class="background-image" style="background-image: url('imgs/home.jpg'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: 60% 30%;">
-      <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
-    </div>
-  
-    <div class="container d-flex align-items-center justify-content-start" style="position: relative; z-index: 1; height: 100%;">
-      <div class="row w-100">
-        <div class="col-lg-6">
-          <div class="text-content" style="color: #fff;">
-            <h1 style="font-size: 4rem; font-weight: bold; margin-bottom: 1rem;">Sua Segurança <br> em primeiro lugar!</h1>
-            
+        <div class="swiper-slide">
+          
+          <div class="background-image img-fluid" style="background-image: url('imgs/home.jpg'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: 60% 30%;">
+            <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
           </div>
-        </div>
-      </div>
-    </div>
-  </header> -->
-
-  <div class="swiper mySwiper header">
-    <div class="swiper-wrapper">
-
-      <div class="swiper-slide">
         
-        <div class="background-image img-fluid" style="background-image: url('imgs/home.jpg'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: 60% 30%;">
-          <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
-        </div>
-      
-        <div class="container d-flex align-items-center justify-content-start" style="position: relative; z-index: 1; height: 100%;">
-          <div class="row w-100">
-            <div class="col-lg-6">
-              <div class="text-content">
-                <h1 class="light-title-content">Indenização</h1>
-                <h1 class="title-content">com 30 dias</h1>
-                <p class="small-title">Leia nosso regulamento</p>
-                
+          <div class="container d-flex align-items-center justify-content-start" style="position: relative; z-index: 1; height: 100%;">
+            <div class="row w-100">
+              <div class="col-lg-6">
+                <div class="text-content">
+                  <h1 class="light-title-content">Indenização</h1>
+                  <h1 class="title-content">com 30 dias</h1>
+                  <p class="small-title">Leia nosso regulamento</p>
+                  
+                </div>
               </div>
             </div>
           </div>
+          
         </div>
+
+        <div class="swiper-slide">
+          
+          <div class="background-image img-fluid" style="background-image: url('imgs/home2.jpg'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: 60% 30%;">
+            <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+          </div>
+        
+          <div class="container d-flex align-items-center justify-content-start" style="position: relative; z-index: 1; height: 100%;">
+            <div class="row w-100">
+              <div class="col-lg-6">
+                <div class="text-content">
+                  <h1 class="title-content">Aconteceu algum imprevisto?</h1>
+                  <p class="description-content">A Grand Brasil vai te ajudar!</p>
+                  <a class="btn btn-custom">
+                    <div class=" d-flex align-items-center">
+                      <i class="bi bi-telephone me-2" style="font-size: 1.5rem;"></i>
+                      Ligue para nosssa assistência
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="swiper-slide">
+          
+          <div class="background-image img-fluid" style="background-image: url('imgs/home3.jpg'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: 60% 30%;">
+            <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+          </div>
+        
+          <div class="container d-flex align-items-center justify-content-start" style="position: relative; z-index: 1; height: 100%;">
+            <div class="row w-100">
+              <div class="col-lg-6">
+                <div class="text-content">
+                  <p class="description-content">Não pense pequeno, pense</p>
+                  <h1 class="title-content">Grand Brasil!</h1>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
         
       </div>
 
-      <div class="swiper-slide">
-        
-        <div class="background-image img-fluid" style="background-image: url('imgs/home2.jpg'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: 60% 30%;">
-          <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <section class="about-section" id="aboutUs" data-aos="fade-up" data-aos-duration="2500">
+      <div class="container">
+        <div class="row align-items-center py-5">
+          
+          <div class="col-md-6 mt-5">
+            <div class="title-section">
+              <p class="title-1-section">Sobre</p>
+              <p class="title-2-section">Nós</p>
+            </div>
+            <p class="mt-4" style="line-height: 1.6; font-size: 1.5rem;">
+              A Grand Brasil é uma associação sem fins lucrativos dedicada à formação de grupos de ajuda mútua, com base na autogestão e no rateio entre associados. Nosso objetivo é oferecer suporte e benefícios de forma colaborativa, promovendo tranquilidade e união.
+              <br> <br>
+              Regida pelas leis civis brasileiras, operamos de forma independente e não somos um seguro empresarial, nem regulamentados pela SUSEP. Nosso funcionamento é baseado em um Regulamento aprovado em Assembleia Geral, garantindo transparência e alinhamento com nossos associados.
+            </p>
+            <a class="btn btn-custom mt-4">Leia nosso regulamento</a>
+          </div>
+          
+          <div class="col-md-6 text-center" style="overflow: hidden;">
+            <img src="imgs/about.jpg" alt="Conheça a Íntegro" class="img-fluid" id="imgAbout">
+          </div>
+          
         </div>
-      
-        <div class="container d-flex align-items-center justify-content-start" style="position: relative; z-index: 1; height: 100%;">
-          <div class="row w-100">
-            <div class="col-lg-6">
-              <div class="text-content">
-                <h1 class="title-content">Aconteceu algum imprevisto?</h1>
-                <p class="description-content">A Grand Brasil vai te ajudar!</p>
-                <a class="btn btn-custom">
-                  <div class=" d-flex align-items-center">
-                    <i class="bi bi-telephone me-2" style="font-size: 1.5rem;"></i>
-                    Ligue para nosssa assistência
+      </div>
+    </section>
+
+    <section id="beneficios" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2500">
+      <div class="container py-5">
+          <h2 class="text-center mb-5">Nossos Benefícios</h2>
+
+          <div class="swiper benefitsCarousel">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="background-image img-fluid image" style="background-image: url('imgs/doutor.jpg'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: 60% 30%;">
+                  <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+                </div>
+              
+                <div class="d-flex align-items-center justify-content-center" style="position: relative; z-index: 1; height: 100%;">
+                  <div class="text-content-benefits">
+                    <h1 class="title-content-benefits">Telemedicina</h1>
+
+                    <p class="description-content-benefits">
+                      <i class="fa-solid fa-check"></i> 24 horas por dia, 7 dias por semana
+                    </p>
+
+                    <p class="description-content-benefits">
+                      <i class="fa-solid fa-check"></i> Plantão Clínico Geral e Pediatria
+                    </p>
+
+                    <p class="description-content-benefits">
+                      <i class="fa-solid fa-check"></i> Mais de 15 especialidades disponíveis por agendamento
+                    </p>
+
+                    <p class="description-content-benefits"> 
+                      <i class="fa-solid fa-check"></i> Associado Grand Brasil tem 3 consultas por mês gratuitas
+                    </p>
+                
                   </div>
+                  
+                </div>
+
+              </div>
+
+              <div class="swiper-slide">
+                <div class="background-image img-fluid image" style="background-image: url('imgs/remedios.jpg'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: 60% 30%;">
+                  <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+                </div>
+              
+                <div class="d-flex align-items-center justify-content-center" style="position: relative; z-index: 1; height: 100%;">
+                  <div class="text-content-benefits">
+                    <h1 class="title-content-benefits">Medicamentos</h1>
+
+                    <p class="description-content-benefits">
+                      <i class="fa-solid fa-check"></i> Medicamentos genéricos a preço de custo
+                    </p>
+
+                    <p class="description-content-benefits">
+                      <i class="fa-solid fa-check"></i> Acione pelo Whatsapp
+                    </p>
+
+                    <p class="description-content-benefits">
+                      <i class="fa-solid fa-check"></i> Pedido Entregue no conforto da sua casa
+                    </p>
+                
+                  </div>
+                  
+                </div>
+
+              </div>
+
+              <div class="swiper-slide">
+                <div class="background-image img-fluid image" style="background-image: url('imgs/rastreamento.jpg'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: 60% 30%;">
+                  <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6);"></div>
+                </div>
+              
+                <div class="d-flex align-items-center justify-content-center" style="position: relative; z-index: 1; height: 100%; width: 100%;">
+                  <div class="text-content-benefits">
+                    <h1 class="title-content-benefits">Rastreamento</h1>
+
+                    <p class="description-content-benefits">
+                      <i class="fa-solid fa-check"></i> Monitoramento em tempo real
+                    </p>
+
+                    <p class="description-content-benefits">
+                      <i class="fa-solid fa-check"></i> Controle de Rotas
+                    </p>
+
+                    <p class="description-content-benefits">
+                      <i class="fa-solid fa-check"></i> Segurança
+                    </p>
+                
+                  </div>
+                  
+                </div>
+
+              </div>
+
+              <div class="swiper-slide">
+                <div class="background-image img-fluid image" style="background-image: url('imgs/reboque.png'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: 30% 30%;">
+                  <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6);"></div>
+                </div>
+              
+                <div class="d-flex align-items-center justify-content-center" style="position: relative; z-index: 1; height: 100%; width: 100%;">
+                  <div class="text-content-benefits">
+                    <h1 class="title-content-benefits">Reboque</h1>
+
+                    <p class="description-content-benefits">
+                      <i class="fa-solid fa-check"></i> Assistência 24 horas
+                    </p>
+
+                    <p class="description-content-benefits">
+                      <i class="fa-solid fa-check"></i> Menor tempo de atendimento
+                    </p>
+
+                    <p class="description-content-benefits">
+                      <i class="fa-solid fa-check"></i> Reboques de até 1.000km
+                    </p>
+                
+                  </div>
+                  
+                </div>
+
+              </div>
+
+              <div class="swiper-slide">
+                <div class="background-image img-fluid image" style="background-image: url('imgs/clubeDeBeneficios.jpg'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: 30% 30%;">
+                  <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6);"></div>
+                </div>
+              
+                <div class="d-flex align-items-center justify-content-center" style="position: relative; z-index: 1; height: 100%; width: 100%;">
+                  <div class="text-content-benefits">
+                    <h1 class="title-content-benefits">Clube de Benefícios</h1>
+
+                    <p class="description-content-benefits">
+                      <i class="fa-solid fa-check"></i>Mais de 30.000 parceiros
+                    </p>
+
+                    <p class="description-content-benefits">
+                      <i class="fa-solid fa-check"></i> Economia de até 90%
+                    </p>
+
+                    <p class="description-content-benefits">
+                      <i class="fa-solid fa-check"></i> Descontos em cinemas, restaurantes, oficinas e muito mais.
+                    </p>
+                
+                  </div>
+                  
+                </div>
+
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+      </div>
+    </section>
+
+    <section class="container my-5 regulamento" id="regulamento" data-aos="fade-down">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="p-5 text-center rounded-4 shadow" style="background-color: #36334F;">
+
+            <i class="bi bi-file-earmark-text fs-1 text-white"></i>
+            <h2 class="fw-bold mt-3  text-white">Baixe o Regulamento</h2>
+
+            <p class="text-white mb-4">
+              Tenha acesso a todas as informações de forma clara e detalhada. Clique no botão abaixo para fazer o download do regulamento.
+            </p>
+
+            <a href="regulamento.docx" class="btn btn-custom mt-4 btn-lg px-4" download>
+              <i class="bi bi-download"></i> Baixar
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+    <section id="talkWithUs" class="py-5 bg-light" data-aos="fade-up">
+
+      <div class="container">
+        <div class="title-section">
+          <p class="title-3-section">Fale</p>
+          <p class="title-4-section">Conosco</p>
+        </div>
+        <p class="text-center text-muted mb-5" style="font-size: 1.5rem;">
+          Entre em contato conosco para dúvidas, sugestões ou mais informações. Estamos prontos para ajudar!
+        </p>
+        <div class="row align-items-center">
+
+          <div class="col-md-6 mb-4">
+
+            <div class="card border-0 shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title" style="color: #333">Nossos Contatos</h3>
+                <!-- <p class="card-text text-muted">
+                  <i class="bi bi-telephone-fill me-2" style="color: #333"></i>
+                  <strong>Whatsapp:</strong> (21) 97354-7742
+                </p> -->
+                <p class="card-text text-muted">
+                  <i class="bi bi-envelope-fill me-2" style="color: #333"></i>
+                  <strong>Email:</strong> contato@grandbrasil.com.br
+                </p>
+                <p class="card-text text-muted">
+                  <i class="bi bi-geo-alt-fill me-2" style="color: #333"></i>
+                  <strong>Matriz:</strong> Rua Vereador José Fortes, 350 - Centro, Nilópolis, RJ
+                </p>
+                <p class="card-text text-muted">
+                  <i class="bi bi-geo-alt-fill me-2" style="color: #333"></i>
+                  <strong>Regional Volta Redonda:</strong> Av. Lucas Evangelista, 33 - Aterrado, Volta Redonda, RJ - 27215070
+                </p>
+                <p class="card-text text-muted">
+                  <i class="bi bi-clock-fill me-2" style="color: #333"></i>
+                  Segunda a sexta-feira, das 8h às 18h.
+                </p>
+              </div>
+            </div>
+
+            <div class="card border-0 shadow-sm mt-4">
+              <div class="card-body text-center">
+                <h3 class="card-title" style="color: #333">Fale no WhatsApp</h3>
+                <a href="https://wa.me/5521973548842" target="_blank" class="btn btn-custom-2 d-flex align-items-center justify-content-center">
+                  <i class="bi bi-whatsapp me-2" style="font-size: 1.5rem;"></i>
+                  <span> (21) 97354-8842</span>
                 </a>
               </div>
             </div>
-          </div>
-        </div>
-        
-      </div>
 
-      <div class="swiper-slide">
-        
-        <div class="background-image img-fluid" style="background-image: url('imgs/home3.jpg'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: 60% 30%;">
-          <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
-        </div>
-      
-        <div class="container d-flex align-items-center justify-content-start" style="position: relative; z-index: 1; height: 100%;">
-          <div class="row w-100">
-            <div class="col-lg-6">
-              <div class="text-content">
-                <p class="description-content">Não pense pequeno, pense</p>
-                <h1 class="title-content">Grand Brasil!</h1>
-                
+          </div>
+
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title" style="color: #333">Envie uma Mensagem</h3>
+                <form action="/enviar-mensagem" method="POST">
+                  <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="phone" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" id="phone" name="telefone" placeholder="Digite seu telefone" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email" required>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="anoVeiculo" class="form-label">Ano do veículo</label>
+                      <input type="text" class="form-control" id="anoVeiculo" name="anoVeiculo" placeholder="Digite o ano de seu veículo" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="modeloVeiculo" class="form-label">Modelo do veículo</label>
+                      <input type="text" class="form-control" id="modeloVeiculo" name="modeloVeiculo" placeholder="Digite o modelo de seu veículo" required>
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-custom-2 mt-4 w-100">Enviar Mensagem</button>
+                </form>
               </div>
             </div>
           </div>
         </div>
-        
       </div>
-      
-      
-    </div>
+    </section>
 
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
-
-  <section class="about-section" id="aboutUs">
-    <div class="container">
-      <div class="row align-items-center py-5">
-        
-        <div class="col-md-6 mt-5">
-          <div class="title-section">
-            <p class="title-1-section">Sobre</p>
-            <p class="title-2-section">Nós</p>
-          </div>
-          <p class="mt-4" style="line-height: 1.6; font-size: 1.5rem;">
-            A Grand Brasil é uma associação sem fins lucrativos dedicada à formação de grupos de ajuda mútua, com base na autogestão e no rateio entre associados. Nosso objetivo é oferecer suporte e benefícios de forma colaborativa, promovendo tranquilidade e união.
-            <br> <br>
-            Regida pelas leis civis brasileiras, operamos de forma independente e não somos um seguro empresarial, nem regulamentados pela SUSEP. Nosso funcionamento é baseado em um Regulamento aprovado em Assembleia Geral, garantindo transparência e alinhamento com nossos associados.
-          </p>
-          <a class="btn btn-custom mt-4">Leia nosso regulamento</a>
+    <footer class="text-white py-3" style="background-color: #2E2D39;">
+      <div class="container d-flex justify-content-between align-items-center">
+        <span class="fs-5">Nos siga nas redes sociais!</span>
+        <div>
+          <a href="#" target="_blank" class="text-white me-3">
+            <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+          </a>
+          <a href="#" target="_blank" class="text-white">
+            <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+          </a>
         </div>
-        
-        <div class="col-md-6 text-center" style="overflow: hidden;">
-          <img src="imgs/about.jpg" alt="Conheça a Íntegro" class="img-fluid" id="imgAbout">
-        </div>
-        
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <section id="beneficios" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-5">Nossos Benefícios</h2>
-        <div class="row g-5 g-lg-4">
-            <!-- Telemedicina -->
-            <div class="col-md-3 col-sm-6 text-center">
-                <div class="beneficio-item p-4">
-                    <i class="fas fa-laptop-medical fa-3x mb-3"></i>
-                    <h4>Telemedicina</h4>
-                    <p>Consultas médicas online com profissionais qualificados, no conforto da sua casa.</p>
-                </div>
-            </div>
-            <!-- Desconto em Medicamentos -->
-            <div class="col-md-3 col-sm-6 text-center">
-                <div class="beneficio-item p-4">
-                    <i class="fas fa-pills fa-3x mb-3"></i>
-                    <h4>Desconto em Medicamentos</h4>
-                    <p>Descontos exclusivos em uma ampla variedade de medicamentos nas melhores farmácias.</p>
-                </div>
-            </div>
-            <!-- Desconto Laboratoriais -->
-            <div class="col-md-3 col-sm-6 text-center">
-                <div class="beneficio-item p-4">
-                    <i class="fas fa-flask fa-3x mb-3"></i>
-                    <h4>Desconto Laboratoriais</h4>
-                    <p>Exames laboratoriais com descontos especiais em laboratórios parceiros.</p>
-                </div>
-            </div>
-            <!-- Medicamentos a Preço de Custo -->
-            <div class="col-md-3 col-sm-6 text-center">
-                <div class="beneficio-item p-4">
-                    <i class="fas fa-hand-holding-usd fa-3x mb-3"></i>
-                    <h4>Medicamentos a Preço de Custo</h4>
-                    <p>Medicamentos essenciais disponíveis a preço de custo para nossos associados.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-  </section>
-
-
-  <section id="talkWithUs" class="py-5 bg-light">
-
-    <div class="container">
-      <div class="title-section">
-        <p class="title-3-section">Fale</p>
-        <p class="title-4-section">Conosco</p>
-      </div>
-      <p class="text-center text-muted mb-5" style="font-size: 1.5rem;">
-        Entre em contato conosco para dúvidas, sugestões ou mais informações. Estamos prontos para ajudar!
-      </p>
-      <div class="row align-items-center">
-
-        <div class="col-md-6 mb-4">
-
-          <div class="card border-0 shadow-sm">
-            <div class="card-body">
-              <h3 class="card-title" style="color: #333">Nossos Contatos</h3>
-              <!-- <p class="card-text text-muted">
-                <i class="bi bi-telephone-fill me-2" style="color: #333"></i>
-                <strong>Whatsapp:</strong> (21) 97354-7742
-              </p> -->
-              <p class="card-text text-muted">
-                <i class="bi bi-envelope-fill me-2" style="color: #333"></i>
-                <strong>Email:</strong> contato@grandbrasil.com.br
+    <div class="modal fade" id="modalAccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+        
+          <div class="modal-body">
+            <div id="contentModal">
+              <h5 class="modal-title" id="exampleModalLabel">PARA ACESSAR ESTE SITE, É PRECISO ESTAR <br> CIENTE QUE:</h5>
+              <p class="description-modal">A Grand Brasil Proteção Veicular é uma Associação, entidade sem fins lucrativos, totalmente voltada para a formação de grupos restritos de ajuda mútua, caracterizados pela autogestão e pelo rateio entre seus Associados.
+                Ou seja, não somos, de forma alguma, um seguro, um seguro empresarial. Por isso, não existe apólice, nem contrato de seguro. Contudo, possuímos Regulamentos que são aprovados em Assembleia Geral pelos nossos associados.
               </p>
-              <p class="card-text text-muted">
-                <i class="bi bi-geo-alt-fill me-2" style="color: #333"></i>
-                <strong>Matriz:</strong> Rua Vereador José Fortes, 350 - Centro, Nilópolis, RJ
-              </p>
-              <p class="card-text text-muted">
-                <i class="bi bi-geo-alt-fill me-2" style="color: #333"></i>
-                <strong>Regional Volta Redonda:</strong> Av. Lucas Evangelista, 33 - Aterrado, Volta Redonda, RJ - 27215070
-              </p>
-              <p class="card-text text-muted">
-                <i class="bi bi-clock-fill me-2" style="color: #333"></i>
-                Segunda a sexta-feira, das 8h às 18h.
+            </div>
+
+            <!-- Espaço para a mensagem de erro -->
+            <div class="error-message">
+              <h3 class="modal-title">Poxa, que pena!</h3>
+              <p class="error-modal-description">
+                Você não pode entrar no nosso site. 🙁<br>
+                Para acessar, é necessário estar ciente que a Grand Brasil é uma Proteção Veicular e o que isso significa.
               </p>
             </div>
           </div>
-
-          <div class="card border-0 shadow-sm mt-4">
-            <div class="card-body text-center">
-              <h3 class="card-title" style="color: #333">Fale no WhatsApp</h3>
-              <a href="https://wa.me/5521973548842" target="_blank" class="btn btn-custom-2 d-flex align-items-center justify-content-center">
-                <i class="bi bi-whatsapp me-2" style="font-size: 1.5rem;"></i>
-                <span> (21) 97354-8842</span>
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-md-6">
-          <div class="card border-0 shadow-sm">
-            <div class="card-body">
-              <h3 class="card-title" style="color: #333">Envie uma Mensagem</h3>
-              <form action="/enviar-mensagem" method="POST">
-                <div class="mb-3">
-                  <label for="nome" class="form-label">Nome</label>
-                  <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
-                </div>
-                <div class="mb-3">
-                  <label for="phone" class="form-label">Telefone</label>
-                  <input type="text" class="form-control" id="phone" name="telefone" placeholder="Digite seu telefone" required>
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email" required>
-                </div>
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <label for="anoVeiculo" class="form-label">Ano do veículo</label>
-                    <input type="text" class="form-control" id="anoVeiculo" name="anoVeiculo" placeholder="Digite o ano de seu veículo" required>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="modeloVeiculo" class="form-label">Modelo do veículo</label>
-                    <input type="text" class="form-control" id="modeloVeiculo" name="modeloVeiculo" placeholder="Digite o modelo de seu veículo" required>
-                  </div>
-                </div>
-                
-                
-                <div class="mb-3">
-                  <label for="mensagem" class="form-label">Mensagem</label>
-                  <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-custom-2 mt-4 w-100">Enviar Mensagem</button>
-              </form>
+          <div class="footer-modal-custom">
+            <p class="fs-5 modal-title">VOCÊ ESTÁ CIENTE DESTA INFORMAÇÃO?</p>
+            <div class="footer-modal">
+              <button type="button" class="btn btn-custom px-4 py-3" data-bs-dismiss="modal" style="border-radius: 5px !important;">SIM</button>
+              <button type="button" class="btn btn-custom me-2 px-4 py-3" id="btnNo" style="border-radius: 5px !important;">NÃO</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
- 
-  <footer class="text-white py-3" style="background-color: #2E2D39;">
-    <div class="container d-flex justify-content-between align-items-center">
-      <span class="fs-5">Nos siga nas redes sociais!</span>
-      <div>
-        <a href="#" target="_blank" class="text-white me-3">
-          <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
-        </a>
-        <a href="#" target="_blank" class="text-white">
-          <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
-        </a>
-      </div>
-    </div>
-  </footer>
 
-  <div class="modal fade" id="modalAccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-       
-        <div class="modal-body">
-          <div id="contentModal">
-            <h5 class="modal-title" id="exampleModalLabel">PARA ACESSAR ESTE SITE, É PRECISO ESTAR <br> CIENTE QUE:</h5>
-            <p class="description-modal">A Grand Brasil Proteção Veicular é uma Associação, entidade sem fins lucrativos, totalmente voltada para a formação de grupos restritos de ajuda mútua, caracterizados pela autogestão e pelo rateio entre seus Associados.
-              Ou seja, não somos, de forma alguma, um seguro, um seguro empresarial. Por isso, não existe apólice, nem contrato de seguro. Contudo, possuímos Regulamentos que são aprovados em Assembleia Geral pelos nossos associados.
-            </p>
-          </div>
-
-          <!-- Espaço para a mensagem de erro -->
-          <div class="error-message">
-            <h3 class="modal-title">Poxa, que pena!</h3>
-            <p class="error-modal-description">
-              Você não pode entrar no nosso site. 🙁<br>
-              Para acessar, é necessário estar ciente que a Grand Brasil é uma Proteção Veicular e o que isso significa.
-            </p>
-          </div>
-        </div>
-        <div class="footer-modal-custom">
-          <p class="fs-5 modal-title">VOCÊ ESTÁ CIENTE DESTA INFORMAÇÃO?</p>
-          <div class="footer-modal">
-            <button type="button" class="btn btn-custom px-4 py-3" data-bs-dismiss="modal" style="border-radius: 5px !important;">SIM</button>
-            <button type="button" class="btn btn-custom me-2 px-4 py-3" id="btnNo" style="border-radius: 5px !important;">NÃO</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script> AOS.init();</script>
+  </body>
 </html>
