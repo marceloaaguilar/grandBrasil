@@ -11,15 +11,15 @@ body {
 
 nav {
   background-color: #ffffff;
-  border-bottom: 1px solid #36334F;
+  border-bottom: 1px solid #032066;
 }
 
 nav a.nav-link, nav a.navbar-brand {
-  color: #36334F; 
+  color: #032066; 
 }
 
 nav a.nav-link:hover, nav a.navbar-brand:hover {
-  color: #E98D4F; 
+  color: #C85E37; 
 }
 
 .nav-link {
@@ -30,7 +30,7 @@ nav a.nav-link:hover, nav a.navbar-brand:hover {
 }
 
 .btn-custom {
-  background-color: #E98D4F;
+  background-color: #C85E37;
   color: #fff;
   border-radius: 30px;
   padding: 10px 20px;
@@ -40,13 +40,13 @@ nav a.nav-link:hover, nav a.navbar-brand:hover {
 
 .btn-custom:hover {
   background-color: none;
-  color: #E98D4F;
-  border: 1px solid #E98D4F;
+  color: #C85E37;
+  border: 1px solid #C85E37;
 }
 
 
 .btn-custom-2 {
-  background-color: #36334F;
+  background-color: #032066;
   color: #fff;
   border-radius: 30px;
   padding: 10px 20px;
@@ -56,8 +56,8 @@ nav a.nav-link:hover, nav a.navbar-brand:hover {
 
 .btn-custom-2:hover {
   background-color: none;
-  color: #36334F;
-  border: 1px solid #36334F;
+  color: #032066;
+  border: 1px solid #032066;
 }
 
 .custom-toggler {
@@ -99,7 +99,7 @@ nav a.nav-link:hover, nav a.navbar-brand:hover {
 }
 
 .about-section {
-  background-color: #36334F;
+  background-color: #032066;
   color: #FFFFFF;
 }
 
@@ -125,11 +125,11 @@ nav a.nav-link:hover, nav a.navbar-brand:hover {
 }
 
 .swiper-button-prev, .swiper-button-next{
-  color: #E98D4F;
+  color: #C85E37;
 }
 
 .swiper-pagination-bullet{
-  background-color: #E98D4F;
+  background-color: #C85E37;
 }
 
 .title-content{
@@ -164,7 +164,7 @@ nav a.nav-link:hover, nav a.navbar-brand:hover {
 }
 
 .title-1-section{
-  color: #E98D4F;
+  color: #C85E37;
 }
 
 .title-2-section{
@@ -172,7 +172,7 @@ nav a.nav-link:hover, nav a.navbar-brand:hover {
 }
 
 .title-3-section{
-  color: #36334F;
+  color: #032066;
 }
 
 .title-4-section{
@@ -186,7 +186,7 @@ nav a.nav-link:hover, nav a.navbar-brand:hover {
 }
 
 .modal-title{
-  color: #36334F;
+  color: #032066;
   text-align: center;
   font-weight: 700;
   font-size: 1.8rem;
@@ -250,17 +250,17 @@ nav a.nav-link:hover, nav a.navbar-brand:hover {
 }
 
 .beneficio-item i {
-  color: #36334F;
+  color: #032066;
 }
 
 .beneficio-item h4 {
-  color: #36334F;
+  color: #032066;
   ;
   margin-bottom: 15px;
 }
 
 .beneficio-item p {
-  color: #6c757d;
+  color: #032066;
 }
 
 .description-content-benefits{
